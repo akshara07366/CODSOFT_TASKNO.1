@@ -126,6 +126,20 @@ The main objective of EduManage is to provide an organized and user-friendly pla
 - Advanced analytics and reporting.
 - Online deployment.
 
+## 📸 Project Screenshots
+
+### Dashboard
+![EduManage Dashboard](public/screenshots/dashboard.png)
+
+### Student Management
+![Student Management](public/screenshots/students.png)
+
+### Attendance Management
+![Attendance Management](public/screenshots/attendance.png)
+
+### Fee Management
+![Fee Management](public/screenshots/fees.png)
+
 ---
 
 ⭐ If you find this project interesting, feel free to explore the repository!
