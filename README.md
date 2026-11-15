@@ -1,36 +1,131 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎓 EduManage – School Management System
 
-## Getting Started
+EduManage is a web-based School Management System developed to simplify and organize everyday school administration. It provides a centralized platform to manage students, teachers, classes, subjects, attendance, examinations, results, and fee payments.
 
-First, run the development server:
+## 🚀 Features
+
+- **Dashboard:** Centralized overview of the school management system.
+- **Student Management:** Add, view, and manage student records and class assignments.
+- **Teacher Management:** Maintain teacher details and records.
+- **Class Management:** Create and manage academic classes.
+- **Subject Management:** Organize subjects and assign teachers.
+- **Attendance Management:** Record and manage student attendance.
+- **Examination Management:** Create and manage examinations.
+- **Results Management:** Enter student marks and calculate grades.
+- **Fee Management:** Generate fee invoices, record payments, and track collected and pending fees.
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Next.js | Web application framework |
+| React | User interface |
+| TypeScript | Programming language |
+| Tailwind CSS | UI styling |
+| PostgreSQL | Database |
+| Prisma ORM | Database management |
+| Node.js | Runtime environment |
+
+## 📂 Project Structure
+
+```text
+edumanage/
+├── app/
+│   ├── api/
+│   ├── attendance/
+│   ├── classes/
+│   ├── examinations/
+│   ├── fees/
+│   ├── results/
+│   ├── students/
+│   ├── subjects/
+│   ├── teachers/
+│   ├── components/
+│   └── page.tsx
+├── prisma/
+│   ├── migrations/
+│   └── schema.prisma
+├── public/
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+## ⚙️ Installation and Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/akshara07366/CODSOFT_TASKNO.1.git
+```
+
+### 2. Open the project folder
+
+```bash
+cd CODSOFT_TASKNO.1
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure the database
+
+Install PostgreSQL and create a database for EduManage.
+
+Create a `.env` file in the project root:
+
+```env
+DATABASE_URL="postgresql://USERNAME:PASSWORD@localhost:5432/DATABASE_NAME"
+```
+
+Replace the placeholders with your own PostgreSQL credentials and database name.
+
+### 5. Apply database migrations
+
+```bash
+npx prisma migrate deploy
+```
+
+### 6. Generate Prisma Client
+
+```bash
+npx prisma generate
+```
+
+### 7. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎯 Project Objective
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The main objective of EduManage is to provide an organized and user-friendly platform for managing important school activities digitally. It reduces manual record management and brings multiple administrative functions together in one application.
 
-## Learn More
+## 👩‍💻 Project Information
 
-To learn more about Next.js, take a look at the following resources:
+**Project Name:** EduManage – School Management System
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Project Type:** Full-Stack Web Application
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Developer:** Akshara Kumari
 
-## Deploy on Vercel
+**GitHub Repository:** [EduManage](https://github.com/akshara07366/CODSOFT_TASKNO.1)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔮 Future Enhancements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- User authentication and role-based access.
+- Parent and student portals.
+- Automated fee receipts.
+- Notifications and announcements.
+- Advanced analytics and reporting.
+- Online deployment.
+
+---
+
+⭐ If you find this project interesting, feel free to explore the repository!
